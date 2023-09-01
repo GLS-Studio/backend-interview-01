@@ -63,21 +63,6 @@ export const userPoolId = userPool.id;
 export const userPoolClientId = userPoolClient.id;
 export const identityPoolId = identityPool.id;
 
-// Cognito
-// const pool = new aws.cognito.UserPool("backend-interview-01-up", {
-//   autoVerifiedAttributes: ["email"],
-// });
-
-// const client = new aws.cognito.UserPoolClient("backend-interview-01-upclient", {
-//   userPoolId: pool.id,
-//   generateSecret: false, // Set to true to generate a client secret
-//   explicitAuthFlows: ["ALLOW_USER_SRP_AUTH", "ALLOW_REFRESH_TOKEN_AUTH"],
-// });
-
-// // Export the name of the bucket
-// export const userPoolId = pool.id;
-// export const userPoolClientId = client.id;
-
 // Create a new IAM user
 const iamUser = new aws.iam.User("amplify-interview-01", {});
 
