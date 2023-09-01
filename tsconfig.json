@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "strict": false,
+        "outDir": "dist",
+        "target": "es2016",
+        "module": "commonjs",
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "noFallthroughCasesInSwitch": true,
+        "esModuleInterop": true,
+        "skipDefaultLibCheck": true,
+    },
+    "files": [
+        "server.ts"
+    ]
+}

@@ -1,0 +1,5 @@
+config:
+  aws:region: eu-central-1
+  params:resourceName: backend-interview-01
+  params:logGroup: backend-interview-01
+  
