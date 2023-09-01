@@ -5,6 +5,12 @@ import { User } from "./lib/models/User";
 // Create an instance of Express
 const app = express();
 
+//Middlewares
+app.use(function (err, req, res, next) {
+  console.error(err.stack);
+  res.status(500).send("Something broke!");
+});
+
 // Define a route that handles GET requests to /users/
 app.get("/users/", async (req: Request, res: Response) => {
   // Return an empty array as the response
