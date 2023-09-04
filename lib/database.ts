@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
 
 export const sequelize = new Sequelize(
-  "postgresql://dbuser:wfug4uWiZvA4pDr2e4bq@db2788ghh.hjgkoruhs.eu-central-1.rds.amazonaws.com/db",
+  process.env.DATABASE_URL,
   { ssl: true }
 );
 
